@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha">
+
+<projection> <type name="State"/> </projection>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Int"/>
+   <type name="State"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node shape="Box" color="White">
+   <type name="Object"/>
+</node>
+
+<node shape="House" color="Green">
+   <type name="Root"/>
+</node>
+
+<node style="Bold">
+   <set name="First" type="ordering/Ord"/>
+   <set name="Next" type="ordering/Ord"/>
+</node>
+
+<node style="Dotted">
+   <set name="collected" type="Object"/>
+</node>
+
+<node visible="no">
+   <type name="ordering/Ord"/>
+</node>
+
+<edge label="">
+   <relation name="pointers"> <type name="Object"/> <type name="Object"/> </relation>
+</edge>
+
+</view>
+
+</alloy>

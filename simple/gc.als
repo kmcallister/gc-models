@@ -4,7 +4,7 @@ sig Object { }
 one sig Root extends Object { }
 
 sig State {
-    pointers: Object -> set Object - Root,
+    pointers: Object -> set (Object - Root),
     collected: set Object,
 }
 
